@@ -1,0 +1,71 @@
+.container>div{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 24px;
+}
+
+/*.container{
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "h h h h h h h h h"
+    "m m c c c c c c c"
+    "m m c c c c c c c"
+    "m m c c c c c c c"
+    "m m c c c c c c c"
+    "f f f f f f f f f";
+    gap: 10px;
+}
+
+.header{
+    background-color: red;
+    grid-area: h;
+}
+.content{
+    background-color: blue;
+    grid-area: c;
+}
+.menu{
+    grid-area: m;
+    background-color: brown;
+}
+.footer{
+    grid-area: f;
+    background-color: aqua;
+}
+
+*/
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(6 , 100px);
+    grid-template-columns: repeat(6,100px);
+    gap: 2px;
+}
+
+.header{
+    background-color: aqua;
+    grid-column: 1/-1;
+    grid-row: 1 / 2;
+}
+.content{
+    background-color: purple;
+    grid-column: 2 / -1;
+    grid-row: 2 / 5;
+  
+    
+}
+.menu{
+    background-color: orange;
+    grid-row: 2/5;
+    
+ 
+}
+.footer{
+    background-color: red;
+    grid-column: 1/-1;
+    grid-row: 5 / 6;
+}
